@@ -7,8 +7,8 @@ import re
 # -----------------get Chinese sentences(list) ready--------------------
 
 # set dir of source file and output file.
-indir = '/Users/linqi/Projects/renpygame/test_s.txt'
-outdir = '/Users/linqi/Projects/renpygame/test_test.txt'
+indir = '/Users/linqi/Projects/Renpy_Game/renpygame/text.txt'
+outdir = '/Users/linqi/Projects/Renpy_Game/renpygame/script.rpy'
 
 # get a source file and an output file. decode chinese words.
 infile = open(indir, 'rU')
@@ -72,7 +72,7 @@ for talk in talks:
 # encode conversations and write them into the output file.
 for talk in talks:
 	talk = talk.encode('utf-8')
-	outfile.write(talk + '\n' + '\n')
+	outfile.write(talk + '\n')
 	print talk
 	
 # close input and output streams.
