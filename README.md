@@ -31,7 +31,7 @@ HOW TO USE:
 2. Set the person who is talking and relevant renpy name on Line 14
 3. Open terminal and type "Python toRenpy.py"
 4. For advanced use please customize the list "sentence_customize"
-5. Any Question, dont's hesitate to ask qili@tcd.ie
+5. Any question, dont's hesitate to ask qili@tcd.ie
 
 使用方法：
 
