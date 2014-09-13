@@ -6,9 +6,12 @@ import re
 
 # -----------------get Chinese sentences(list) ready--------------------
 
-# set dir of source file(UTF-8) and output file(.rpy).
-indir = '../text.txt'
-outdir = '../script.rpy'
+# set dir of source file and output file.
+indir = '/Users/linqi/Projects/Renpy_Game/renpygame/text.txt'
+outdir = '/Users/linqi/Projects/Renpy_Game/renpygame/script.rpy'
+
+# a list of names needs to be converted
+name_tuples = [(u'女：', 'n'), (u'女声：', 'n'), (u'Lily：', 'l'), (u'服务生：', 'w'), (u'Anna：', 'a'), (u'警察：', 'p'), (u'警察A：', 'p_a'), (u'警察B：', 'p_b')]	
 
 # get a source file and an output file. decode chinese words.
 infile = open(indir, 'rU')
@@ -38,10 +41,6 @@ talks = re.findall(sentence_customize, source)
 # will be rendered to:
 # 		scene cg02
 # 		with dissolve
-
-
-# a list of names needs to be converted
-name_tuples = [(u'女：', 'n'), (u'女声：', 'n'), (u'Lily：', 'l'), (u'服务生：', 'w'), (u'Anna：', 'a'), (u'警察：', 'p'), (u'警察A：', 'p_a'), (u'警察B：', 'p_b')]	
 
 # capture cg notes and all the name titles and do the converting job
 for talk in talks:
@@ -91,4 +90,7 @@ outfile.close()
 4. 将全部对话做成renpy script格式；√
 5. 解决句中中英文混杂的分句问题；√
 
+如果继续制作的话：
+1. 将【】里的内容做成renpy注释（较易）
+2. 制作UI界面，比如做成专门转换剧本为Renpy Script的网页（较难）
 """
