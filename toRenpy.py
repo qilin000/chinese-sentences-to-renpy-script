@@ -6,9 +6,9 @@ import re
 
 # -----------------get Chinese sentences(list) ready--------------------
 
-# set dir of source file and output file.
-indir = '/Users/linqi/Projects/Renpy_Game/renpygame/text.txt'
-outdir = '/Users/linqi/Projects/Renpy_Game/renpygame/script.rpy'
+# set dir of source file(UTF-8) and output file(.rpy).
+indir = '../text.txt'
+outdir = '../script.rpy'
 
 # get a source file and an output file. decode chinese words.
 infile = open(indir, 'rU')
