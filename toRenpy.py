@@ -33,8 +33,11 @@ talks = re.findall(sentence_customize, source)
 # 		n "你在哪里，快出来啊？！"
 # render all cg notes to renpy script format
 # (four spaces + background code and "with dissolve" on second line with same indentation)
-# eg.    scene bg02
-#        with dissolve
+# for example:
+# 		CG02-不确定黑色需不需要做出来，就先当做00吧
+# will be rendered to:
+# 		scene cg02
+# 		with dissolve
 
 
 # a list of names needs to be converted
