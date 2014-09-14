@@ -1,3 +1,8 @@
+toRenpy.py helps a non-progammer to transfer a story written in Chinese to renpy script format.
+toRenpy.py可以帮助非程序员把中文写成的故事转化成Renpy script格式。
+
+=================================
+
 EXAMPLE:
 使用效果：
 
